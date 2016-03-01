@@ -5,6 +5,9 @@ if (Meteor.isClient) {
   Template.hello.helpers({
     counter: function () {
       return Session.get('counter');
+    },
+    mostrarMensaje:function(){
+      return Session.get('counter')>0 || false
     }
   });
 
